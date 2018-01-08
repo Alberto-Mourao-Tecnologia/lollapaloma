@@ -1,0 +1,270 @@
+/*header*/
+header .container{
+	display: flex;
+	align-items: center;
+	background-image: url(../imagens/brigadeiros.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border-bottom: 5px solid rgb(202, 6, 142);
+}
+
+img[src="imagens/logo_sem_fundo.png"]{
+	max-width: 250px;
+	max-height: 200px;
+	width: 25%;
+}
+
+.header-lollapaloma{
+	font-family: 'Simonetta', SimonettaBlack;
+	font-size: 2.5em;
+	color: #c65499;
+	text-shadow: 8px 8px 6px black;
+	flex-grow: 1;
+	text-align: center;
+}
+@font-face{
+	font-family: SimonettaBlack;
+	src: url(../fonts/Simonetta-BlackItalic.ttf);
+}
+@media (min-width: 350px){
+	.header-lollapaloma{
+		font-size: 3em;
+	}
+}
+@media (min-width: 500px){
+	.header-lollapaloma{
+		font-size: 4em;
+	}
+}
+@media (min-width: 600px){
+	.header-lollapaloma{
+		font-size: 4.5em;
+	}
+}
+@media (min-width: 700px){
+	.header-lollapaloma{
+		font-size: 5em;
+	}
+}
+@media (min-width: 800px){
+	.header-lollapaloma{
+		flex-grow: 0;
+		margin-left: 2%;
+		font-size: 5.5em;
+	}
+}
+
+/*Quem Somos*/
+.quem-somos{
+	background-color: #f9d1e9;
+}
+.quem-somos-subtitulo{
+	text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: 'Poiret One', cursive;
+    padding: 0.8em 0 0.8em 0;
+}
+#quem{
+	color: #c91d51;
+}
+#somos{
+	color: #d64a9c;
+}
+.quem-somos p{
+	padding: 0 1em 2em 1em;
+    line-height: 1.2em;
+    color: #a2123e;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+@media (min-width: 500px){
+	.subtitulo{
+		padding: 1.2em 0 1.2em 0;
+		font-size: 1.5em;
+	}
+	.quem-somos p{
+		padding: 0 2em 3em 2em;
+		font-size: 0.85em;
+	}
+}
+@media (min-width: 600px){
+	.subtitulo{
+		padding: 1.2em 0 1.2em 0;
+		font-size: 1.7em;
+	}
+	.quem-somos p{
+		padding: 0 2em 3em 2em;
+		font-size: 0.95em;
+	}
+}
+@media (min-width: 700px){
+	.subtitulo{
+		padding: 1.2em 0 1.2em 0;
+		font-size: 1.9em;
+	}
+	.quem-somos p{
+		padding: 0 2em 3em 2em;
+		font-size: 1em;
+	}
+}
+@media (min-width: 800px){
+	.subtitulo{
+		padding: 2em 0 2em 0;
+		font-size: 2.5em;
+	}
+	.quem-somos p{
+		padding: 0 2em 6em 2em;
+		font-size: 1.2em;
+	}
+}
+
+/*sabores*/
+.sabores{
+	background-color: #ffe4f4;
+	padding-bottom: 1em;
+}
+.sabores-subtitulo{
+	text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: 'Poiret One', cursive;
+    padding: 0.8em 0 0.8em 0;
+    color: #c91d51;
+}
+.sabores-caixa{
+	background-color: #f9d1e9;
+    width: 80%;
+    margin: auto;
+    padding: 1em;
+    border-radius: 0.5em;
+    margin-bottom: 0.5em;
+    border: 1px solid #ce2e5f;
+}
+.sabores .descricao{
+	padding-bottom: 1em;
+}
+.sabores h3{
+	text-align: center;
+	font-family: 'Poiret One', cursive;
+	font-size: 1.1em;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+	color: #d42d5f;
+}
+.sabores p{
+	line-height: 1.2em;
+    font-size: 0.9em;
+    color: #a2123e;
+}
+
+.sabores img{
+	width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    box-shadow: 0 0 1px;
+    transition: 1s;
+    -webkit-transition: 1s;
+}
+.sabores img:hover{
+	transform: scale(1.1);
+	box-shadow: 0 0 3px;
+	transition: 1s;
+	-webkit-transition: 1s;
+}
+
+@media (min-width: 500px){
+	.subtitulo{
+		padding: 1.2em 0 1.2em 0;
+		font-size: 1.5em;
+	}
+}
+@media (min-width: 600px){
+	.subtitulo{
+		padding: 1.2em 0 1.2em 0;
+		font-size: 1.7em;
+	}
+	.sabores-container{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 90%;
+    	margin: auto;
+	}
+	.sabores-caixa{
+		width: 43%;
+	    margin: 0;
+	    margin-bottom: 0.5em;
+	}
+}
+@media (min-width: 700px){
+	.subtitulo{
+		padding: 1.2em 0 1.2em 0;
+		font-size: 1.9em;
+	}
+	.sabores-container{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 90%;
+    	margin: auto;
+	}
+	.sabores-caixa{
+		width: 43%;
+	    margin: 0;
+	    margin-bottom: 0.5em;
+	}
+	.sabores h3{
+		font-size: 1.2em;
+	}
+	.sabores p{
+		font-size: 0.9em;
+	}
+}
+@media (min-width: 800px){
+	.subtitulo{
+		padding: 2em 0 2em 0;
+		font-size: 2.5em;
+	}
+	.sabores-container{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 90%;
+    	margin: auto;
+	}
+	.sabores-caixa{
+		width: 43%;
+	    margin: 0;
+	    margin-bottom: 0.5em;
+	}
+	.sabores h3{
+		font-size: 1.5em;
+	}
+	.sabores p{
+		font-size: 1.2em;
+	}
+}
+@media (min-width: 1300px){
+	.sabores-caixa{
+		width: 46%;
+	}
+}
+
+/*footer*/
+footer{
+	background-color: #555;
+    padding: 0.5em;
+}
+.footer{
+	color: #CCC;
+}
+
+@media (min-width: 400px){
+	footer{
+	    padding: 0.5em 3em;
+	}
+}
